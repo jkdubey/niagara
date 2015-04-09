@@ -23,6 +23,11 @@ public class SpringTilesController {
 		return "index";
 	}
 	
+	@RequestMapping(value="login")
+	public String login() {
+		return "login";
+	}
+	
 	@RequestMapping(value="viewPeson")
 	public ModelAndView viewPersons(Model model) {
 		Map<String, List<Person>> persons = 

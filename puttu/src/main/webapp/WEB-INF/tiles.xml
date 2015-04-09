@@ -12,6 +12,11 @@
     <put-attribute name="action" value="/common/action.jsp" />
   </definition>
   
+  <definition name="nolayoutTemplate" template="/layouts/simple.jsp">
+  	<put-attribute name="title" value="Tiles tutorial homepage" />
+  	<put-attribute name="body" value="/common/home_body.jsp" />
+  </definition>
+  
   <definition name="index" extends="DefaultTemplate">
 	    <put-attribute name="body"	
         value="/welcome/index.jsp" />
@@ -20,6 +25,11 @@
 	<definition name="personList" extends="DefaultTemplate">
 	    <put-attribute name="body"	
         value="/WEB-INF/views/personList.jsp" />
+	</definition>
+	
+	<definition name="login" extends="nolayoutTemplate">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/welcome/login.jsp"></put-attribute>
 	</definition>
 	
 </tiles-definitions>
