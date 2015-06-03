@@ -1,4 +1,6 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,14 +14,14 @@
     <title><tiles:getAsString name="title"/></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./static/css/signin.css" rel="stylesheet">
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/signin.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./static/js/iebug/ie-emulation-modes-warning.js"></script>
+    <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/iebug/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,6 +33,6 @@
   	<tiles:insertAttribute name="body" />
   	
   	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  	<script src="./static/js/iebug/ie10-viewport-bug-workaround.js"></script>
+  	<script src="<c:out value='${pageContext.request.contextPath}' />/static/js/iebug/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
