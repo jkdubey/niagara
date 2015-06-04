@@ -1,11 +1,13 @@
 package puttu;
 
+import java.security.Principal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,7 +21,9 @@ public class SpringTilesController {
 	}
 
 	@RequestMapping(value="index")
-	public String index() {
+	public String index(ModelMap model, Principal principal) {
+		String name = principal.getName();
+		model.addAttribute("username", name);
 		return "index";
 	}
 	
