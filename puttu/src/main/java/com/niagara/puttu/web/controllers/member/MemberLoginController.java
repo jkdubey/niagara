@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value="/member")
-public class SearchMemberController {
+public class MemberLoginController {
 
-	@RequestMapping(value="search")
-	public String searchMember() {
-		return "member-search";
+	@RequestMapping(value="mLogin")
+	public String memberlogin() {
+		return "member-login";
 	}
 }

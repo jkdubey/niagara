@@ -15,13 +15,15 @@
     <title><tiles:getAsString name="title"/></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.css" rel="stylesheet"/>
+ <!-- linking error css -->
+  <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/form_validate.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
     <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/signin.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/dashboard.css" rel="stylesheet">
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/memberLayout.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,26 +37,31 @@
   </head>
 
   <body>
+   <tiles:insertAttribute name="title"/>
 
     <tiles:insertAttribute name="header" />
+  <div class="container">
+      
+    <div class="row">
+   <tiles:insertAttribute name="menu"/>
+    <tiles:insertAttribute name="bodymenu"/>
     
-    <div class="container-fluid">
-      <div class="row">
-        
-        <tiles:insertAttribute name="menu"/>
-        
-        <tiles:insertAttribute name="body"/>
-        
-	    <tiles:insertAttribute name="footer" />
-        
-      </div>
+  <tiles:insertAttribute name="body"/>
+  
+  </div>
     </div>
+        
+ 
+    
     
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery.js"></script>
+        <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery-2.1.4.min.js"></script>
+    <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery.validate.min.js"></script>
+    <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/form.validate.function.js"></script>
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/holder.js"></script>

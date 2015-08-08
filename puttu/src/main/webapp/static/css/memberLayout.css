@@ -1,0 +1,147 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.username{
+	color:black;
+	
+}
+
+@media (min-width: 768px) {
+	.content{
+	left:0;
+	top:80px;
+	z-index:-2;
+	
+	}
+	.navbar-fixed-top{
+	background-color:white;
+	}
+	.navbar-fixed{
+	position:fixed;
+	left:0;
+	right:0;
+	top:50px;
+	background-color: white;
+	border-top: 2px solid #081308;
+	border-bottom: 2px solid #081308;
+	z-index:1000;
+	}
+	.bodymenu{
+	 position: fixed;
+	right:auto;
+	left:20%;
+	z-index:1000;
+	display:block;
+	background-color:white;
+	top:100px;
+	width:80%;
+	height:60px;
+border-bottom: 2px solid #081308;
+border-top: 2px solid #081308;
+	}
+  .sidebar {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    width:20%;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: white;
+    border-right: 2px solid #081308;
+    border-top: 2px solid #081308;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.contentbody{
+	padding-top:100px;
+	margin-top:100px;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
