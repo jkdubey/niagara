@@ -8,5 +8,22 @@
 	    <put-attribute name="body"	
         value="/member/search.jsp" />
 	</definition>
+<definition name="member-add" extends="DefaultTemplate">
+	    <put-attribute name="body"	
+        value="/member/add.jsp" />
+         
+	</definition>
 
+<definition name="member-login" extends="nolayoutTemplate">
+	    <put-attribute name="body"	
+        value="/member/mLogin.jsp" />
+	</definition>
+	<definition name="member-home" extends="DefaultTemplate">
+	    <put-attribute name="body"	
+        value="/member/mHome.jsp" />
+	</definition>
+		<definition name="member-family" extends="DefaultTemplate">
+	    <put-attribute name="body"	
+        value="/member/mFamily.jsp" />
+	</definition>
 </tiles-definitions>
