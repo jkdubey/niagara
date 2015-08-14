@@ -38,10 +38,24 @@ body {
 
 @media (min-width: 768px) {
 	.content{
-	left:0;
-	top:80px;
-	z-index:-2;
+	left:22%;
+	top:70px;
+	z-index:2000; 
+	width:100%;
 	
+	}
+		.content_center{
+	left:50%;
+	top:100px;
+	z-index:2000; 
+	width:80%;
+	}
+	.below_heading{
+	left:20%;
+	top:250px;
+	z-index:2000; 
+	width:80%;
+	position:fixed;
 	}
 	.navbar-fixed-top{
 	background-color:white;
@@ -54,6 +68,7 @@ body {
 	background-color: white;
 	border-top: 2px solid #081308;
 	border-bottom: 2px solid #081308;
+	
 	z-index:1000;
 	}
 	.bodymenu{
@@ -68,7 +83,23 @@ body {
 	height:60px;
 border-bottom: 2px solid #081308;
 border-top: 2px solid #081308;
+border-right: 2px solid #081308;
+border-left: 2px solid #081308;
 	}
+	.information_heading{	 position: fixed;
+	right:auto;
+	left:21%;
+	z-index:1000;
+	display:block;
+	background-color:#93c669;
+	top:170px;
+	width:78%;
+	height:50px;
+border-bottom: 2px solid #081308;
+border-top: 2px solid #081308;
+border-right: 2px solid #081308;
+border-left: 2px solid #081308;
+  }
   .sidebar {
     position: fixed;
     top: 100px;

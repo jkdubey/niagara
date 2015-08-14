@@ -4,15 +4,7 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
   
-  <definition name="member-search" extends="DefaultTemplate">
-	    <put-attribute name="body"	
-        value="/member/search.jsp" />
-	</definition>
-<definition name="member-add" extends="DefaultTemplate">
-	    <put-attribute name="body"	
-        value="/member/add.jsp" />
-         
-	</definition>
+
 
 <definition name="member-login" extends="nolayoutTemplate">
 	    <put-attribute name="body"	
@@ -25,5 +17,13 @@
 		<definition name="member-family" extends="DefaultTemplate">
 	    <put-attribute name="body"	
         value="/member/mFamily.jsp" />
+	</definition>
+	<definition name="member-profile" extends="DefaultTemplate">
+	    <put-attribute name="body"	
+        value="/member/mCreateProfile.jsp" />
+	</definition>
+	<definition name="member-profile-submission" extends="DefaultTemplate">
+	    <put-attribute name="body"	
+        value="/member/mCreateProfileSubmission.jsp" />
 	</definition>
 </tiles-definitions>
