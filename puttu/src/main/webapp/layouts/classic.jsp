@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
-<html lang="en"><head>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
     <!-- Bootstrap core CSS -->
     <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.css" rel="stylesheet"/>
  <!-- linking error css -->
-  <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/form_validate.css" rel="stylesheet"/>
+
 
     <!-- Custom styles for this template -->
     <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/signin.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/memberLayout.css" rel="stylesheet">
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/classic.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -38,9 +38,9 @@
 
   <body>
    <tiles:insertAttribute name="title"/>
-
+<tiles:insertAttribute name="logoheader"/>
     <tiles:insertAttribute name="header" />
-  <div class="container">
+
       
     <div class="row">
    <tiles:insertAttribute name="menu"/>
@@ -49,7 +49,7 @@
   <tiles:insertAttribute name="body"/>
   
   </div>
-    </div>
+
         
  
     
@@ -58,8 +58,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery.js"></script>
-        <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery-2.1.4.min.js"></script>
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/jquery.validate.min.js"></script>
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/form.validate.function.js"></script>
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/bootstrap.min.js"></script>
@@ -69,4 +67,5 @@
     <script src="<c:out value='${pageContext.request.contextPath}' />/static/js/iebug/ie10-viewport-bug-workaround.js"></script>
   
 
-<svg style="visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 200 200" height="200" width="200"><defs></defs><text style="font-weight:bold;font-size:10pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle" y="10" x="0">200x200</text></svg></body></html>
+<svg style="visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 200 200" height="200" width="200"><defs></defs><text style="font-weight:bold;font-size:10pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle" y="10" x="0">200x200</text></svg></body>
+</html>

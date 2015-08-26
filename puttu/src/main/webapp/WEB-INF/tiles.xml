@@ -3,8 +3,9 @@
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-  <definition name="DefaultTemplate" template="/layouts/memberLayout.jsp">
-     <put-attribute name="title" value="/common/logobanner.jsp" />
+  <definition name="DefaultTemplate" template="/layouts/classic.jsp">
+   <put-attribute name="title" value="Welcome to Member Home Page" />
+     <put-attribute name="logoheader" value="/common/logobanner.jsp" />
     <put-attribute name="header" value="/common/banner.jsp" />
     <put-attribute name="menu" value="/common/common_menu.jsp" />
     <put-attribute name="bodymenu" value="/common/bodymenu.jsp" />
