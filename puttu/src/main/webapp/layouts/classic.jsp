@@ -15,7 +15,7 @@
     <title><tiles:getAsString name="title"/></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.css" rel="stylesheet"/>
+    <link href="<c:out value='${pageContext.request.contextPath}' />/static/css/bootstrap.min.css" rel="stylesheet"/>
  <!-- linking error css -->
 
 
